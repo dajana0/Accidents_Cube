@@ -6,10 +6,71 @@
     <Name>Accidents_Cube.database</Name>
     <FullPath>Accidents_Cube.database</FullPath>
   </Database>
+  <Dimensions>
+    <ProjectItem>
+      <Name>D TIME.dim</Name>
+      <FullPath>D TIME.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>D REGION.dim</Name>
+      <FullPath>D REGION.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>D TIME OF DAY.dim</Name>
+      <FullPath>D TIME OF DAY.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>D ACCIDENT SEVERITY.dim</Name>
+      <FullPath>D ACCIDENT SEVERITY.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>D ACCIDENT DETAILS.dim</Name>
+      <FullPath>D ACCIDENT DETAILS.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>D WEATHER.dim</Name>
+      <FullPath>D WEATHER.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>D SPEED LIMIT.dim</Name>
+      <FullPath>D SPEED LIMIT.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>D ROAD TYPE.dim</Name>
+      <FullPath>D ROAD TYPE.dim</FullPath>
+    </ProjectItem>
+  </Dimensions>
+  <DataSources>
+    <ProjectItem>
+      <Name>Accidents IDH.ds</Name>
+      <FullPath>Accidents IDH.ds</FullPath>
+    </ProjectItem>
+  </DataSources>
+  <DataSourceViews>
+    <ProjectItem>
+      <Name>Accidents IDH.dsv</Name>
+      <FullPath>Accidents IDH.dsv</FullPath>
+    </ProjectItem>
+  </DataSourceViews>
   <Configurations>
     <Configuration>
       <Name>Development</Name>
-      <Options />
+      <Options>
+        <ConnectionMappings>
+          <ConfigurationSetting>
+            <Id>Accidents IDH</Id>
+            <Name>Accidents IDH</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=WINDOWS-FJHHSSS;Integrated Security=SSPI;Initial Catalog=AccidentsIDH</Value>
+          </ConfigurationSetting>
+        </ConnectionMappings>
+        <ConnectionSecurityMappings>
+          <ConfigurationSetting>
+            <Id>Accidents IDH</Id>
+            <Name>Accidents IDH</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+        </ConnectionSecurityMappings>
+      </Options>
     </Configuration>
   </Configurations>
 </Project>
